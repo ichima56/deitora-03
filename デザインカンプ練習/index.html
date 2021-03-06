@@ -1,0 +1,473 @@
+<!doctype html>
+<htmL lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>デザインカンプの練習</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descriptipn" content="デザインカンプの練習">
+  <!-- css -->
+  <link rel="stylesheet" href="./sass/reset.css">
+  <link rel="stylesheet" href="./sass/cump-01.css">
+  <link rel="stylesheet" href="./swiper.min.css/swiper.min.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./wow.css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+  <link rel="stylesheet" href="./css/wow.css">
+  <link rel="stylesheet" href="./modal.scss/modal.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-in clear">
+      <div class="float-left">
+        <img src="./img/logo.png" alt="logo" class="header-in-logo">
+      </div>
+      <div class="float-right">
+        <ul class="header-in-contents">
+          <li class="header-in-contents-li"><a href="#a-card" class="is-active">Card</a></li>
+          <li class="header-in-contents-li"><a href="#a-news" class="is-active">News</a></li>
+          <li class="header-in-contents-li"><a href="#a-price" class="is-active">Prices</a></li>
+          <li class="header-in-contents-li"><a href="#a-access" class="is-active">Access</a></li>
+          <li class="header-in-contents-li"><a href="#a-contact" class="is-active">Contact</a></li>
+        </ul>
+      </div>
+      <div class="drawer drawer--right drawer-close">
+        <div role="banner">
+          <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+          </button>
+          <!-- ナビゲーションの中身 -->
+          <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+              <li><a class="drawer-menu-item" href="#a-card">Card<img src="./img/arrow-b.svg" alt="logo"
+                    class="arrow-right"></a></li>
+              <li><a class="drawer-menu-item" href="#a-news">News<img src="./img/arrow-b.svg" alt="logo"
+                    class="arrow-right"></a></li>
+              <li><a class="drawer-menu-item" href="#a-price">Price<img src="./img/arrow-b.svg" alt="logo"
+                    class="arrow-right"></a></li>
+              <li><a class="drawer-menu-item" href="#a-access">Access<img src="./img/arrow-b.svg" alt="logo"
+                    class="arrow-right"></a></li>
+              <li><a class="drawer-menu-item" href="#a-contact">Contact<img src="./img/arrow-b.svg" alt="logo"
+                    class="arrow-right"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="top-wrapper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="container">
+            <h2 class="top-h2">一番伝えたいことを書く</h2>
+            <p class="top-p">リードリードリード</p>
+            <button class="top-contact"><span class="top-contact-span">お問い合わせ</span></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h2 class="top-h2">一番伝えたいことを書く</h2>
+            <p class="top-p">リードリードリード</p>
+            <button class="top-contact"><span class="top-contact-span">お問い合わせ</span></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="container">
+            <h2 class="top-h2">一番伝えたいことを書く</h2>
+            <p class="top-p">リードリードリード</p>
+            <button class="top-contact"><span class="top-contact-span">お問い合わせ</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="a-card" class="card-contents">
+    <div class="container">
+      <h2 class="card-contents-h2 wow fadeIn" data-wow-delay=".3s">Card</h2>
+      <div class="card-contents-flex">
+        <div class="card-flex-item wow slideInLeft" data-wow-delay=".3s">
+          <img src="./img/card-img.png" alt="card" class="card-flex-img">
+          <p class="card-flex-title">タイトルタイトル</p>
+          <p class="card-flex-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="card-flex-item">
+          <img src="./img/card-img.png" alt="card" class="card-flex-img">
+          <p class="card-flex-title">タイトルタイトル</p>
+          <p class="card-flex-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="card-flex-item">
+          <img src="./img/card-img.png" alt="card" class="card-flex-img">
+          <p class="card-flex-title">タイトルタイトル</p>
+          <p class="card-flex-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="card-flex-item">
+          <img src="./img/card-img.png" alt="card" class="card-flex-img">
+          <p class="card-flex-title">タイトルタイトル</p>
+          <p class="card-flex-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="card-flex-item">
+          <img src="./img/card-img.png" alt="card" class="card-flex-img">
+          <p class="card-flex-title">タイトルタイトル</p>
+          <p class="card-flex-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="card-flex-item">
+          <img src="./img/card-img.png" alt="card" class="card-flex-img">
+          <p class="card-flex-title">タイトルタイトル</p>
+          <p class="card-flex-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-news" class="news wow slideInDown" data-wow-delay=".3s">
+    <div class="container">
+      <h2 class="card-contents-h2">News</h2>
+      <div class="news-contents-flex">
+        <div class="news-flex-item">
+          <div class="news-fixed">
+            <p class="news-date">2019-01-30</p>
+            <p class="news-label">ラベル1</p>
+          </div>
+          <div class="news-moved">
+            <p class="news-text"><span
+                data-text="ニュースニュースニュースニュースニュースニュースニュースニュース">ニュースニュースニュースニュースニュースニュースニュースニュース</span></p>
+          </div>
+        </div>
+        <div class="news-flex-item">
+          <div class="news-fixed">
+            <p class="news-date">2019-01-30</p>
+            <p class="news-label-02">ラベル2</p>
+          </div>
+          <div class="news-moved">
+            <p class="news-text">ニュースニュースニュースニュースニュースニュースニュースニュース</p>
+          </div>
+        </div>
+        <div class="news-flex-item">
+          <div class="news-fixed">
+            <p class="news-date">2019-01-30</p>
+            <p class="news-label-03">ラベル3</p>
+          </div>
+          <div class="news-moved">
+            <p class="news-text">ニュースニュースニュースニュースニュースニュースニュースニュース</p>
+          </div>
+        </div>
+        <div class="news-flex-item">
+          <div class="news-fixed">
+            <p class="news-date">2019-01-30</p>
+            <p class="news-label">ラベル1</p>
+          </div>
+          <div class="news-moved">
+            <p class="news-text-01">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+          </div>
+        </div>
+        <div class="news-flex-item">
+          <div class="news-fixed">
+            <p class="news-date">2019-01-30</p>
+            <p class="news-label">ラベル1</p>
+          </div>
+          <div class="news-moved">
+            <p class="news-text">ニュースニュースニュースニュースニュースニュースニュースニュース</p>
+          </div>
+        </div>
+      </div>
+      <div class="more">
+        <p class="link-more"><a href="#" class="more-a">more</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-price" class="price">
+    <div class="container">
+      <h2 class="card-contents-h2">Price</h2>
+      <div class="price-flex">
+        <div class="price-img wow slideInLeft" data-wow-delay=".3s">
+          <img src="./img/price-img.png" alt="img">
+        </div>
+        <div class="price-table wow slideInRight" data-wow-delay=".3s">
+          <table class="table-contents">
+            <tr>
+              <td></td>
+              <th>column1</th>
+              <th>column2</th>
+            </tr>
+            <tr>
+              <td>row1</td>
+              <td class="td-midle">100円</td>
+              <td class="td-midle">100円</td>
+            </tr>
+            <tr>
+              <td>row2</td>
+              <td class="td-midle">6,000円</td>
+              <td class="td-midle">0円</td>
+            </tr>
+            <tr>
+              <td>row3</td>
+              <td class="td-midle"><span class="red-6000">6,000円</span><br><span class="ppp">※今だけ半額</span></td>
+              <td class="td-midle">0円</td>
+            </tr>
+            <tr>
+              <td>row4</td>
+              <td class="td-midle">100円</td>
+              <td class="td-midle">100円</td>
+            </tr>
+          </table>
+          <div class="table-contact">
+            <p>※目安なので詳しくは<a href="#" class="table-link">お問い合わせ</a>ください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-access" class="map">
+    <div class="container">
+      <h2 class="card-contents-h2">Access</h2>
+      <div class="map-iframe">
+        <div class="iframe-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10559.046054147988!2d133.85706396017557!3d35.461417750757505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555ddcc206452e3%3A0x6cb868c6b590ef81!2z44KG44KK44Gv44G-5aSn5bmz5ZyS!5e0!3m2!1sja!2sjp!4v1607765007769!5m2!1sja!2sjp"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="map-flex">
+          <div class="map-flex-item-01">
+            <p class="map-p">住所</p>
+            <p class="map-p">アクセス</p>
+          </div>
+          <div class="map-flex-item-01">
+            <p class="map-pp">アメリカテキサス州</p>
+            <p class="map-pp">ドナルド・トランプ</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-contact">
+        <button class="map-cpntact-btn">
+          Googleマップで見る
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-contact" class="contact">
+    <div class="container">
+      <h2 class="card-contents-h2">Contact</h2>
+      <div class="contact-area">
+        <div class="contact-area-flex">
+          <div class="contact-name">
+            <p class="contact-name-p">お名前</p>
+            <p class="contact-name-red">必須</p>
+          </div>
+          <div class="input-area">
+            <input class="text-test" type="text" placeholder="山田　太郎">
+          </div>
+        </div>
+        <div class="contact-area-flex">
+          <div class="contact-name">
+            <p class="contact-name-p">メールアドレス</p>
+            <p class="contact-name-red">必須</p>
+          </div>
+          <div class="input-area">
+            <input class="text-test" type="text" placeholder="メールアドレス">
+          </div>
+        </div>
+        <div class="contact-area-flex">
+          <div class="contact-name">
+            <p class="contact-name-p">お問い合わせ種別</p>
+          </div>
+          <div class="input-area">
+            <select class="select-test">
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+        </div>
+        <div class="contact-area-flex">
+          <div class="contact-name">
+            <p class="contact-name-p">お問い合わせ内容</p>
+          </div>
+          <div class="input-area">
+            <textarea class="textarea-text" placeholder="お問い合わせ内容を入力してください"></textarea>
+          </div>
+        </div>
+        <div class="contact-area-flex">
+          <div class="contact-radio">
+            <label class="contact-radio-item"><input class="form-radio" type="radio" name="your-radio"
+                checked><span>ラジオ1</span></label>
+            <label class="contact-radio-item"><input class="form-radio" type="radio" name="your-radio"
+                checked><span>ラジオ2</span></label>
+            <label class="contact-radio-item"><input class="form-radio" type="radio" name="your-radio"
+                checked><span>ラジオ3</span></label>
+          </div>
+        </div>
+        <div class="contact-check">
+          <label><input class="form-checkbox" type="checkbox" name="your-checkbox" required><span><a href=""
+            id="jstest" class="js-modal-open" data-target="for-modal">プライバシーポリシー</a>に合意する</span></label>
+        </div>
+        <div class="map-contact-submit">
+          <input type="submit" class="contact-submit" value="送信する">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- モーダルエリアここから -->
+  <section id="modalArea" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <h1>Here are modal contents!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. </p>
+      </div>
+      <div id="closeModal" class="closeModal">
+        <img src="./img/btn-batsu.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- モーダルエリアここまで -->
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-flex">
+        <div class="footer-logo">
+          <img src="./img/logo.png" alt="logo" class="footer-logo-img">
+          <p class="footer-logo-p">住所：ほげほげのほげほげ</p>
+          <p class="footer-logo-p">TEL：0000-00-0000</p>
+        </div>
+        <div class="footer-contents">
+          <ul class="footer-in-contents clear">
+            <li class="footer-in-contents-li">Card</li>
+            <li class="footer-in-contents-li">News</li>
+            <li class="footer-in-contents-li">Prices</li>
+            <li class="footer-in-contents-li">Access</li>
+            <li class="footer-in-contents-li">Contact</li>
+          </ul>
+        </div>
+        <div class="footer-sns clear">
+          <img src="./img/twitter.svg" alt="logo" class="footer-sns-img">
+          <img src="./img/facebook.svg" alt="logo" class="footer-sns-img">
+          <img src="./img/instagram.svg" alt="logo" class="footer-sns-img-01">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2020 デイトラ All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="floating-a"><img src="./img/totop.png" alt="上部へスクロール" class="floating"></a>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
+    });
+  </script>
+  <script src="./wow.js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    jQuery.noConflict();
+    (function ($) {
+
+      $(document).ready(function () {
+        $('.drawer').drawer();
+      });
+
+    })(jQuery);
+  </script>
+  <script>
+    jQuery(".js-drawer").on("click", function (e) {
+      e.preventDefault();
+      //ここにドロワーの記述
+      return false;
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    // #から始まるURLがクリックされた時
+    jQuery('a[href^="#"]').not('.floating-a').click(function () {
+      let header = jQuery(".header").innerHeight();
+      // 移動速度を指定（ミリ秒）
+      let speed = 300;
+      // hrefで指定されたidを取得
+      let id = jQuery(this).attr("href");
+      // idの値が#のみだったらターゲットをhtmlタグにしてトップへ戻るようにする
+      let target = jQuery("#" == id ? "html" : id);
+      // ページのトップを基準にターゲットの位置を取得
+      let position = jQuery(target).offset().top;
+      // ターゲットの位置までspeedの速度で移動
+      jQuery("html, body").animate(
+        {
+          scrollTop: position
+        },
+        speed
+      );
+      return false;
+    });
+  </script>
+  <script>
+    jQuery(window).on("scroll", function ($) {
+      if (jQuery(this).scrollTop() > 100) {
+        jQuery('.floating').show();
+      } else {
+        jQuery('.floating').hide();
+      }
+    });
+    jQuery('.floating').click(function () {
+      jQuery('body,html').animate({
+        scrollTop: 0
+      }, 500);
+      return false;
+    });
+  </script>
+  <script>
+    jQuery('.header-in-contents-li').click(function () {
+      jQuery('.header-in-contents-li').removeClass('is-active');
+      jQuery(this).addClass('is-active');
+      return false;
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    //リンククリックの既定動作をキャンセル
+    $(function(){
+      $("#jstest").click(function(){
+        return false;
+      });
+    });
+    
+    document.getElementById("jstest").addEventListener("click", function(){
+      //以下に処理を書く
+    }, false);
+  </script>    
+  <script src="modal.js"></script>
+</body>
